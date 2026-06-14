@@ -1,0 +1,31 @@
+export default function Logo({ size = 40, showText = true, className = '' }) {
+  return (
+    <div className={`logo ${className}`}>
+      <svg
+        width={size}
+        height={size}
+        viewBox="0 0 48 48"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+      >
+        <path
+          d="M24 4L42 12V26C42 36.5 33.5 43.5 24 46C14.5 43.5 6 36.5 6 26V12L24 4Z"
+          fill="#F97316"
+          stroke="#FB923C"
+          strokeWidth="1.5"
+        />
+        <rect x="18" y="22" width="12" height="10" rx="1.5" fill="#1C1F26" />
+        <path
+          d="M20 22V18C20 15.7909 21.7909 14 24 14C26.2091 14 28 15.7909 28 18V22"
+          stroke="#1C1F26"
+          strokeWidth="2.5"
+          strokeLinecap="round"
+        />
+        <circle cx="24" cy="26.5" r="1.5" fill="#F97316" />
+        <rect x="23" y="26.5" width="2" height="3" rx="0.5" fill="#F97316" />
+      </svg>
+      {showText && <span className="logo-text">ShopGuard</span>}
+    </div>
+  )
+}
