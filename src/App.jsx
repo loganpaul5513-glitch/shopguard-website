@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Logo from './components/Logo'
 import './App.css'
 
@@ -135,9 +136,9 @@ function App() {
     <div className="site">
       <header className="nav">
         <div className="container nav-inner">
-          <a href="#" className="nav-brand" aria-label="ShopGuard home">
+          <Link to="/" className="nav-brand" aria-label="ShopGuard home">
             <Logo size={36} />
-          </a>
+          </Link>
           <a href={TRIAL_URL} className="btn btn-primary btn-nav">
             Start Free Trial
           </a>
@@ -161,9 +162,9 @@ function App() {
               <a href={TRIAL_URL} className="btn btn-primary btn-lg">
                 Start Free Trial
               </a>
-              <a href="#features" className="btn btn-secondary btn-lg">
+              <Link to="/how-it-works" className="btn btn-secondary btn-lg">
                 See How It Works
-              </a>
+              </Link>
             </div>
             <p className="hero-note">First 30 days free · No credit card required</p>
           </div>
